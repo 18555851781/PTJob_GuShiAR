@@ -74,6 +74,8 @@ function reset()
     render.domElement.style.display = "none";
     render.domElement.style.padding = "0px";
     render.domElement.style.margin = "0px";
+    render.domElement.style.overflowX = "0";
+    render.domElement.style.overflowY = "0";
 
     // render.setClearColor(0x000000);
     // render.domElement.
