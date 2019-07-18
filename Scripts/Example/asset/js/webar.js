@@ -121,7 +121,9 @@ class WebAR {
      */
     initVideo() {
         this.videoElement = document.createElement('video');
-        this.videoElement.setAttribute('playsinline', 'playsinline');
+        this.videoElement.setAttribute('playsinline', '');
+        this.videoElement.setAttribute('x5-playsinline','');
+        this.videoElement.setAttribute('webkit-playsinline','');
         this.videoElement.style.padding = "0";
         this.videoElement.style.margin = "0";
 
