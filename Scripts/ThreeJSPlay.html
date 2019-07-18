@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <script src="../ThreeJS/build/three.js"></script>
+    <script src="../ThreeJS/examples/js/loaders/FBXLoader.js"></script>
+    <script src="../ThreeJS/examples/js/curves/NURBSCurve.js"></script>
+    <script src="../ThreeJS/examples/js/curves/NURBSUtils.js"></script>
+    <script src="../ThreeJS/examples/js/libs/inflate.min.js"></script>
+    <script src="../ThreeJS/examples/js/controls/OrbitControls.js"></script>
+    <script src="../ThreeJS/examples/js/objects/Water2.js"></script>
+    <script src="../ThreeJS/examples/js/objects/Reflector.js"></script>
+    <script src="../ThreeJS/examples/js/objects/Refractor.js"></script>
+    <script src="../ThreeJS/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <video id="iv" style="display: none;" autoplay = "autoplay"></video>
+
+    <script>
+
+
+    </script>
+    <script>
+        //  摄像头兼容
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+        //  打开摄像头
+        navigator.getUserMedia({video:true,audio:false},function (stream) {
+            document.getElementById("iv").srcObject = stream;
+            document.getElementById("iv").play();
+        },console.log);
+    </script>
+</body>
+</html>

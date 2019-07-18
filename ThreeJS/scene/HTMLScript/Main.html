@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainScene</title>
+    <script src="../../build/three.js"></script>
+    <script src="../../examples/js/controls/OrbitControls.js"></script>
+    <script src="../../examples/js/loaders/FBXLoader.js"></script>
+
+</head>
+<body>
+    <script>
+
+        var MyCam,MyScene,MyRendener,MyLoader,MyControl,MyLight;
+
+        MyCam = new THREE.PerspectiveCamera(45,innerWidth/innerHeight,1,1000);
+        MyCam.position.set(100,200,300);
+        MyCam.lookAt(0,0,0);
+
+        MyControl = new THREE.OrbitControls(MyCam);
+        MyControl.update();
+
+        MyScene = new THREE.Scene();
+        MyScene.background = new THREE.Color(0xa0a0a0);
+
+        MyLight = new THREE.HemisphereLight(0xffffff,0x444444,1);
+        MyLight.position.set(0,200,0);
+
+        MyLoader = new THREE.FBXLoader();
+        MyLoader.load("../../examples/models/fbx/Samba Dancing.fbx",
+            function (object)
+            {
+
+            }
+
+        )
+
+    </script>
+</body>
+</html>

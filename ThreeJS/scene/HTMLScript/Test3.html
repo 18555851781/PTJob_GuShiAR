@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTest3</title>
+    <script src="../../build/three.js"></script>
+    <script src="../../examples/js/controls/OrbitControls.js"></script>
+    <script src="../../examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <script>
+        //  初始化场景
+        var scene = new THREE.Scene();
+        //  初始化摄像机
+        var camera = new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,1,500);
+        camera.position.z = 100;
+        camera.lookAt(new THREE.Vector3(0,0,0));
+        scene.add(camera);
+        //  初始化渲染器
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        renderer.setClearColor("rgb(255,255,255)",1.0);
+        document.body.appendChild(renderer.domElement);
+
+        var light = new THREE.DirectionalLight(0x990000,1.0);
+        light.position.set( 1, 1, 1 );
+        scene.add( light );
+
+        var light2 = new THREE.DirectionalLight(0x990000,1.0);
+        light2.position.set(1,-1,1);
+        scene.add(light2);
+
+        var light3 = new THREE.DirectionalLight(0x990000,1.0);
+        light3.position.set(-1,1,1);
+        scene.add(light3);
+
+        var light4 = new THREE.DirectionalLight(0x990000,1.0);
+        light3.position.set(-1,-1,1);
+        scene.add(light4);
+
+        var light5 = new THREE.DirectionalLight(0x990000,1.0);
+        light5.position.set(0,0,-1);
+        scene.add(light5);
+
+        var controls = new THREE.OrbitControls( camera );
+        controls.autoRotate = true;
+        // scene.add(controls);
+
+        var Obj = new THREE.BoxGeometry(50,50,50);
+        var matrial = new THREE.MeshLambertMaterial();
+        var cube = new THREE.Mesh(Obj,matrial);
+        scene.add(cube);
+
+        function init()
+        {
+            requestAnimationFrame(init);
+            controls.update();
+            //  渲染
+            renderer.render(scene,camera);
+        }
+
+        init();
+    </script>
+</body>
+</html>

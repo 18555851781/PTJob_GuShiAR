@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTest2</title>
+    <script type="text/javascript" src="../../build/three.js"></script>
+</head>
+<body id="Canvas">
+
+<script type="text/javascript">
+
+    var scene = new THREE.Scene();
+    //scene.overrideMaterial = new THREE.MeshLambertMaterial({color: 0xffffff});
+
+    var camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,500);
+
+    camera.position.x = -30;
+    camera.position.y = 40;
+    camera.position.z = 30;
+    camera.lookAt(scene.position);
+    scene.add(camera);
+
+    var renderer = new THREE.WebGLRenderer();
+    //renderer.setClearColor(new THREE.Color(0xffffff,1.0));
+    renderer.setSize(window.innerWidth,window.innerHeight);
+    renderer.shadowMapEnabled = true;
+    document.body.appendChild(renderer.domElement);
+
+
+    var light = new THREE.DirectionalLight(0xffffff,1);
+    light.castShadow = true;
+    light.position = new THREE.Vector3(0,1,0);
+    scene.add(light);
+
+    var plane = new THREE.PlaneGeometry(60,40,1,1);
+    var plane_mat = new THREE.MeshLambertMaterial({color:0x00ff00});
+    var MyPlane = new THREE.Mesh(plane,plane_mat);
+    MyPlane.receiveShadow = true;
+    MyPlane.rotation.x = -0.5 * Math.PI;
+    MyPlane.position.x = 0;
+    MyPlane.position.y = 0;
+    MyPlane.position.z = 0;
+    scene.add(MyPlane);
+
+    var cube = new THREE.BoxGeometry(3,3,3);
+    var mat = new THREE.MeshLambertMaterial({color:0x00ff00});
+    var MyCube = new THREE.Mesh(cube,mat);
+    MyCube.position.x = 0;
+    MyCube.position.y = 20;
+    MyCube.position.z = 0;
+    scene.add(MyCube);
+
+    animat();
+
+    function  animat()
+    {
+        requestAnimationFrame(animat);
+        renderer.render(scene,camera);
+
+        MyCube.rotation.x += 0.1;
+        MyCube.rotation.y += 0.1;
+        MyCube.rotation.z += 0.1;
+    }
+
+</script>
+</body>
+</html>

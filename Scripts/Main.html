@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAR Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="Example/asset/css/default.css" />
+</head>
+<body>
+<div class="UI">
+    <img src="../Texture/Chunyexiyu/fanhui.png" class="back" onclick="Refresh()">
+    <img src="../Texture/Chunyexiyu/bofang.png" class="playMusic" onclick="">
+    <img src="../Texture/Chunyexiyu/Text.png" class="Text">
+</div>
+<div class="footer">
+    <select class="none" id="videoDevice"></select>
+    <input class="none" type="button" value="开始识别" id="start" />
+    <input class="none" type="button" value="停止识别" id="stop" />
+</div>
+
+<script type="text/javascript" src="Example/asset/js/adapter.js"></script>
+<script type="text/javascript" src="Example/asset/js/vconsole.min.js"></script>
+<script type="text/javascript" src="../ThreeJS/build/three.js"></script>
+<script type="text/javascript" src="../ThreeJS/examples/js/loaders/FBXLoader.js"></script>
+<script type="text/javascript" src="../ThreeJS/examples/js/loaders/GLTFLoader.js"></script>
+<script type="text/javascript" src="../ThreeJS/examples/js/curves/NURBSCurve.js"></script>
+<script type="text/javascript" src="../ThreeJS/examples/js/curves/NURBSUtils.js"></script>
+<script src="../ThreeJS/examples/js/objects/Water2.js"></script>
+<script src="../ThreeJS/examples/js/objects/Reflector.js"></script>
+<script src="../ThreeJS/examples/js/objects/Refractor.js"></script>
+<script type="text/javascript" src="Example/asset/libs/three/inflate.min.js"></script>
+<script type="text/javascript" src="Example/asset/libs/three/OrbitControls.js"></script>
+<script type="text/javascript" src="Example/asset/js/ThreeHelper.js"></script>
+<script type="text/javascript" src="Example/asset/js/webar.js"></script>
+<script>
+
+    var vConsole = new VConsole();
+    const now = (new Date()).getTime();
+    const e = document.createElement('script');
+    e.setAttribute('src', `Example/asset/js/app.js?t=${now}`);
+    document.body.appendChild(e);
+
+</script>
+
+</body>
+</html>

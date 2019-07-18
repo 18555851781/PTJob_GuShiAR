@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three.js Test1</title>
+</head>
+<body>
+
+    <p id="Mynow"></p>
+    <script src="../../build/three.js"></script>
+    <script>
+        // var MyScene = new THREE.Scene();
+        // var MyRender = new THREE.WebGLRenderer();
+        // MyRender.setSize(window.innerWidth, window.innerHeight);
+        // var MyCam = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 500);
+        // MyCam.position.z = 5;
+        // MyCam.lookAt(0, 0, 0);
+        //
+        // var MyMaterial = new THREE.LinevBasicMaterial({color:0X0000f});
+        // var MyGeo = new THREE.Geometry();
+        // MyGeo.vertices.push(new vector3(-10,0,0));
+        // MyGeo.vertices.push(new vector3(0,10,0));
+        // MyGeo.vertices.push(new vector3(0,0,10));
+        // var line=new THREE.Line(MyGeo,MyMaterial);
+        //
+        // scene.add(line);
+        // MyRender.render(MyScene,MyCam);
+
+        // alert("Debug Log");
+        // document.write("Document Log");
+
+        var MyLog = function Log()
+        {
+            alert("方法执行！");
+        }
+
+        var element = document.getElementById("Mynow");
+        element.innerHTML("New Id");
+    </script>
+    <button onclick="MyLog()">DebugLog</button>
+</body>
+</html>
