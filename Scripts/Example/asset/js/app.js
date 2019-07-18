@@ -65,7 +65,7 @@ function reset()
     video = document.getElementById("iv");
 
     camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,1,1000);
-    camera.position.set(0,10,-50);
+    camera.position.set(0,30,-60);
     camera.lookAt(scene);
 
     render = new THREE.WebGLRenderer({antialias:true,alpha: true});
@@ -88,8 +88,8 @@ function reset()
     // scene.add(light_2);
 
     control = new THREE.OrbitControls(camera);
-    control.minDistance = 20;
-    control.maxDistance = 50;
+    control.minDistance = 50;
+    control.maxDistance = 70;
     control.enablePan = false;
 }
 

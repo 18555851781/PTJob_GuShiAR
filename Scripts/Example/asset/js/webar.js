@@ -78,13 +78,14 @@ class WebAR {
                 .then(stream => {
                 this.videoElement.srcObject = stream;
                 this.videoElement.style.display = 'block';
+                this.videoElement.style.position = 'relative';
                 this.videoElement.play();
                 this.videoElement.onloadedmetadata = () => {
                     const cameraSize = {
-                        // width: this.videoElement.offsetWidth,
-                        // height: this.videoElement.offsetHeight
-                        width: window.innerWidth,
-                        height: window.innerHeight
+                        width: this.videoElement.offsetWidth,
+                        height: this.videoElement.offsetHeight
+                        // width: window.innerWidth,
+                        // height: window.innerHeight
                     };
                     console.info(JSON.stringify(cameraSize));
                     if (window.innerWidth < window.innerHeight) {

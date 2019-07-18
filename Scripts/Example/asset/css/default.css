@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .none {
@@ -17,7 +17,6 @@ body {
     position: absolute;
     bottom: 45px;
     z-index: 100;
-
     width: 100%;
     text-align: center;
 }

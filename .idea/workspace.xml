@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7288bc9c-627d-43fa-a73e-fc6e9fccbfca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Scripts/Example/asset/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Example/asset/css/default.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Example/asset/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Example/asset/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" afterDir="false" />
     </list>
@@ -20,8 +21,8 @@
       <file leaf-file-name="Main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="88">
+              <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -29,17 +30,17 @@
       <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/css/default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="3">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="146">
+              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
               <folding>
                 <element signature="n#!!block;n#animate#0" />
               </folding>
@@ -47,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webar.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/webar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+            <state relative-caret-position="1716">
+              <caret line="78" column="53" lean-forward="true" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -84,9 +85,9 @@
         <option value="$PROJECT_DIR$/Scripts/Example/asset/js/ThreeHelper.js" />
         <option value="$PROJECT_DIR$/Scripts/ThreeJSPlay.html" />
         <option value="$PROJECT_DIR$/Scripts/Main.html" />
+        <option value="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" />
         <option value="$PROJECT_DIR$/Scripts/Example/asset/css/default.css" />
         <option value="$PROJECT_DIR$/Scripts/Example/asset/js/app.js" />
-        <option value="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" />
       </list>
     </option>
   </component>
@@ -199,12 +200,12 @@
       <workItem from="1563357337905" duration="1367000" />
       <workItem from="1563367393044" duration="7184000" />
       <workItem from="1563408586872" duration="6040000" />
-      <workItem from="1563432438225" duration="2089000" />
+      <workItem from="1563432438225" duration="2954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66976000" />
+    <option name="totallyTimeSpent" value="67841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -357,34 +358,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/webar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="78" column="53" lean-forward="true" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="88">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="3">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="146">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
           <folding>
             <element signature="n#!!block;n#animate#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/webar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
         </state>
       </provider>
     </entry>
