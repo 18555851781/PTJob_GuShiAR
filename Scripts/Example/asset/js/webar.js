@@ -81,8 +81,10 @@ class WebAR {
                 this.videoElement.play();
                 this.videoElement.onloadedmetadata = () => {
                     const cameraSize = {
-                        width: this.videoElement.offsetWidth,
-                        height: this.videoElement.offsetHeight
+                        // width: this.videoElement.offsetWidth,
+                        // height: this.videoElement.offsetHeight
+                        width: window.innerWidth,
+                        height: window.innerHeight
                     };
                     console.info(JSON.stringify(cameraSize));
                     if (window.innerWidth < window.innerHeight) {
@@ -121,6 +123,7 @@ class WebAR {
         this.videoElement.setAttribute('playsinline', 'playsinline');
         this.videoElement.style.padding = "0";
         this.videoElement.style.margin = "0";
+
         document.body.appendChild(this.videoElement);
     }
     /**

@@ -72,6 +72,8 @@ function reset()
     render.setSize(window.innerWidth,window.innerHeight);
     render.domElement.setAttribute('class', 'mainCanvas');
     render.domElement.style.display = "none";
+    render.domElement.style.padding = "0px";
+    render.domElement.style.margin = "0px";
 
     // render.setClearColor(0x000000);
     // render.domElement.
