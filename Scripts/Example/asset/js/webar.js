@@ -78,7 +78,13 @@ class WebAR {
                 .then(stream => {
                 this.videoElement.srcObject = stream;
                 this.videoElement.style.display = 'block';
-                this.videoElement.webkitRequestFullScreen();
+                    if (this.videoElement .requestFullscreen) {
+                        this.videoElement .requestFullscreen();
+                    } else if (this.videoElement .mozRequestFullScreenx) {
+                        this.videoElement .mozRequestFullScreen();
+                    } else if (this.videoElement .webkitRequestFullScreen) {
+                        this.videoElement .webkitRequestFullScreen();
+                    }
                 this.videoElement.play();
                 this.videoElement.onloadedmetadata = () => {
                     const cameraSize = {

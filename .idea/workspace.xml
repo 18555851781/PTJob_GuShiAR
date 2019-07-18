@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7288bc9c-627d-43fa-a73e-fc6e9fccbfca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="Main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
               <folding>
                 <element signature="e#2535#3589#0" />
                 <element signature="e#3631#3664#0" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="webar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/webar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+            <state relative-caret-position="407">
+              <caret line="82" column="71" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -161,12 +159,12 @@
       <workItem from="1563357337905" duration="1367000" />
       <workItem from="1563367393044" duration="7184000" />
       <workItem from="1563408586872" duration="6040000" />
-      <workItem from="1563432438225" duration="7588000" />
+      <workItem from="1563432438225" duration="7816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72475000" />
+    <option name="totallyTimeSpent" value="72703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -337,8 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="165">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
           <folding>
             <element signature="e#2535#3589#0" />
             <element signature="e#3631#3664#0" />
@@ -352,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/webar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+        <state relative-caret-position="407">
+          <caret line="82" column="71" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
         </state>
       </provider>
     </entry>
