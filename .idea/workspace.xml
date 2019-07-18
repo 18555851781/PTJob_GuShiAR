@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7288bc9c-627d-43fa-a73e-fc6e9fccbfca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Scripts/Example/asset/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Example/asset/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="649">
+              <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
+              <folding>
+                <element signature="e#2535#3589#0" />
+                <element signature="e#3631#3664#0" />
+                <element signature="e#3684#4835#0" />
+                <element signature="e#4857#5897#0" />
+                <element signature="e#5920#6288#0" />
+                <element signature="e#6318#7412#0" />
+                <element signature="e#7433#7717#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+            <state>
+              <caret selection-end-line="202" />
               <folding>
                 <element signature="n#!!block;n#animate#0" />
               </folding>
@@ -82,10 +91,10 @@
         <option value="$PROJECT_DIR$/Scripts/model_test.html" />
         <option value="$PROJECT_DIR$/Scripts/Example/asset/js/ThreeHelper.js" />
         <option value="$PROJECT_DIR$/Scripts/ThreeJSPlay.html" />
-        <option value="$PROJECT_DIR$/Scripts/Main.html" />
         <option value="$PROJECT_DIR$/Scripts/Example/asset/css/default.css" />
         <option value="$PROJECT_DIR$/Scripts/Example/asset/js/webar.js" />
         <option value="$PROJECT_DIR$/Scripts/Example/asset/js/app.js" />
+        <option value="$PROJECT_DIR$/Scripts/Main.html" />
       </list>
     </option>
   </component>
@@ -172,12 +181,12 @@
       <workItem from="1563357337905" duration="1367000" />
       <workItem from="1563367393044" duration="7184000" />
       <workItem from="1563408586872" duration="6040000" />
-      <workItem from="1563432438225" duration="6590000" />
+      <workItem from="1563432438225" duration="7176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71477000" />
+    <option name="totallyTimeSpent" value="72063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -213,6 +222,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+          <folding>
+            <element signature="e#2535#3589#0" />
+            <element signature="e#3631#3664#0" />
+            <element signature="e#3684#4835#0" />
+            <element signature="e#4857#5897#0" />
+            <element signature="e#5920#6288#0" />
+            <element signature="e#6318#7412#0" />
+            <element signature="e#7433#7717#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -330,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/webar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -353,10 +364,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Example/asset/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+        <state>
+          <caret selection-end-line="202" />
           <folding>
             <element signature="n#!!block;n#animate#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/Main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
+          <folding>
+            <element signature="e#2535#3589#0" />
+            <element signature="e#3631#3664#0" />
+            <element signature="e#3684#4835#0" />
+            <element signature="e#4857#5897#0" />
+            <element signature="e#5920#6288#0" />
+            <element signature="e#6318#7412#0" />
+            <element signature="e#7433#7717#0" />
           </folding>
         </state>
       </provider>
