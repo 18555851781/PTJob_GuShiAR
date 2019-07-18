@@ -6,7 +6,10 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: visible;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .none {
