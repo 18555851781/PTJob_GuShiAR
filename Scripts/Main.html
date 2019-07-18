@@ -35,19 +35,12 @@
 <script>
 
     var vConsole = new VConsole();
-    // const now = (new Date()).getTime();
-    // const e = document.createElement('script');
-    // e.setAttribute('src', `Example/asset/js/app.js?t=${now}`);
-    // document.body.appendChild(e);
 
 </script>
 
 <script>
     //             别间隔时间(毫秒), 识别服务地址, 认证token
     const webAR = new WebAR(1000, 'https://cn1-crs.easyar.com:8443/search', 'mk5HpNPpTTs6/iL1RFiOeO2svsFEL86V7erut5HQolqVATfBntApxg6ktMeX3yX6sUqlf1g2Jh4ADNa1ruDFhA==');
-    // Threejs简单使用类
-    const threeHelper = new ThreeHelper();
-
     let scene,camera,render,control,light_1,video;
     let cloud;
     let mixer1,mixer2;

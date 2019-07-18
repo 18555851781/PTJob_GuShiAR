@@ -78,7 +78,7 @@ class WebAR {
                 .then(stream => {
                 this.videoElement.srcObject = stream;
                 this.videoElement.style.display = 'block';
-                this.videoElement.style.position = 'relative';
+                this.videoElement.webkitRequestFullScreen();
                 this.videoElement.play();
                 this.videoElement.onloadedmetadata = () => {
                     const cameraSize = {
