@@ -74,17 +74,10 @@ class WebAR {
             });
         }
         return new Promise((resolve, reject) => {
-            navigator.mediaDevices.getUserMedia({video:{facingMode:"environment"}})
+            navigator.mediaDevices.getUserMedia({video:{facingMode:{exact:"environment"}}})
                 .then(stream => {
                 this.videoElement.srcObject = stream;
                 this.videoElement.style.display = 'block';
-                    if (this.videoElement .requestFullscreen) {
-                        this.videoElement .requestFullscreen();
-                    } else if (this.videoElement .mozRequestFullScreenx) {
-                        this.videoElement .mozRequestFullScreen();
-                    } else if (this.videoElement .webkitRequestFullScreen) {
-                        this.videoElement .webkitRequestFullScreen();
-                    }
                 this.videoElement.play();
                 this.videoElement.onloadedmetadata = () => {
                     const cameraSize = {
@@ -127,12 +120,7 @@ class WebAR {
      */
     initVideo() {
         this.videoElement = document.createElement('video');
-        this.videoElement.setAttribute('playsinline', '');
-        this.videoElement.setAttribute('x5-playsinline','');
-        this.videoElement.setAttribute('webkit-playsinline','');
-        this.videoElement.style.padding = "0";
-        this.videoElement.style.margin = "0";
-
+        this.videoElement.setAttribute('playsinline', 'playsinline');
         document.body.appendChild(this.videoElement);
     }
     /**
