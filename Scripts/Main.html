@@ -99,8 +99,8 @@
 
         video = document.getElementById("iv");
 
-        camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,1,1000);
-        camera.position.set(0,30,-60);
+        camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,1000);
+        camera.position.set(5,5,5);
         camera.lookAt(scene);
 
         render = new THREE.WebGLRenderer({antialias:true,alpha: true});
@@ -123,9 +123,9 @@
         // light_2.lookAt(scene);
         // scene.add(light_2);
 
-        control = new THREE.OrbitControls(camera);
-        control.minDistance = 50;
-        control.maxDistance = 70;
+        control = new THREE.OrbitControls(camera,render.domElement);
+        control.minDistance = 5;
+        control.maxDistance = 5;
         control.enablePan = false;
     }
 
@@ -145,7 +145,8 @@
             mixer1 =new THREE.AnimationMixer(obj);
             let action = mixer1.clipAction(obj.animations[0]);
             action.play();
-            obj.position.set(-1,0.3,-2);
+            obj.scale.set(0.1,0.1,0.1);
+            obj.position.set(0,0.05,0);
             //obj.children[0].children[0].visible = false;
             console.log(obj);
             scene.add(obj);
@@ -154,7 +155,8 @@
             mixer2 = new THREE.AnimationMixer(obj);
             let action = mixer2.clipAction(obj.animations[0]);
             action.play();
-            obj.position.set(0,0,-2);
+            obj.scale.set(0.1,0.1,0.1);
+            obj.position.set(0,0,0);
             //obj.children[0].children[0].visible = false;
             scene.add(obj);
         })
@@ -162,7 +164,7 @@
 
     function Loadwater()
     {
-        let watergeomery = new THREE.CircleBufferGeometry(22,64);
+        let watergeomery = new THREE.CircleBufferGeometry(2.22,64);
         let water = new THREE.Water(watergeomery,{
             color : 0xffffff,
             scale : 0.5,
@@ -170,7 +172,7 @@
             textureWidth: 1024,
             textureHeight: 1024
         })
-        water.position.set(-3.5,-0.5,-3.5);
+        water.position.set(-0.05,-0.05,0);
         water.rotation.x=-Math.PI/2;
         scene.add(water);
     }

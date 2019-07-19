@@ -74,7 +74,7 @@ class WebAR {
             });
         }
         return new Promise((resolve, reject) => {
-            navigator.mediaDevices.getUserMedia({video:{facingMode:{exact:"environment"}}})
+            navigator.mediaDevices.getUserMedia({video:{facingMode:"environment"}})
                 .then(stream => {
                 this.videoElement.srcObject = stream;
                 this.videoElement.style.display = 'block';
