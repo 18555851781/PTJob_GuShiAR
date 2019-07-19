@@ -79,10 +79,6 @@
             //     position: [0, 0, 0]
             // };
             // // threeHelper.loadObject(setting);
-            reset();
-            createPointCloud();
-            LoadGLTF();
-            Loadwater();
             animate();
         });
     }
@@ -100,12 +96,13 @@
         video = document.getElementById("iv");
 
         camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,1000);
-        camera.position.set(10,10,10);
+        camera.position.set(3,3,3);
         camera.lookAt(scene);
 
         render = new THREE.WebGLRenderer({antialias:true,alpha: true});
         render.setSize(window.innerWidth,window.innerHeight);
         render.domElement.setAttribute('class', 'mainCanvas');
+        render.domElement.style.display = "none";
         window.addEventListener('resize', () => {
             this.camera.aspect = window.innerWidth / window.innerHeight;
             this.camera.updateProjectionMatrix();
@@ -115,7 +112,7 @@
         // render.domElement.
         document.body.appendChild(render.domElement);
 
-        light_1 = new THREE.HemisphereLight("rgb(255,210,255)","rgb(255,213,170)",7);
+        light_1 = new THREE.HemisphereLight("rgb(255,210,255)","rgb(255,213,170)",10);
         light_1.position.set(0,0,0);
         scene.add(light_1);
 
@@ -124,8 +121,8 @@
         // scene.add(light_2);
 
         control = new THREE.OrbitControls(camera,render.domElement);
-        control.minDistance = 5;
-        control.maxDistance = 15;
+        control.minDistance = 3;
+        control.maxDistance = 5;
         control.enablePan = false;
     }
 
@@ -236,6 +233,10 @@
     }
 
     OpenCam();
+    reset();
+    createPointCloud();
+    LoadGLTF();
+    Loadwater();
 
 </script>
 
