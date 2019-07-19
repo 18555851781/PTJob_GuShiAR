@@ -34,7 +34,7 @@
 <script type="text/javascript" src="Example/asset/js/webar.js"></script>
 <script>
 
-    var vConsole = new VConsole();
+    //var vConsole = new VConsole();
 
 </script>
 
@@ -96,7 +96,7 @@
         video = document.getElementById("iv");
 
         camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,1000);
-        camera.position.set(3,3,3);
+        camera.position.set(4,4,4);
         camera.lookAt(scene);
 
         render = new THREE.WebGLRenderer({antialias:true,alpha: true});
@@ -122,7 +122,7 @@
 
         control = new THREE.OrbitControls(camera,render.domElement);
         control.minDistance = 3;
-        control.maxDistance = 5;
+        control.maxDistance = 6;
         control.enablePan = false;
     }
 
